@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="max">
+  <meta name="keywords" content="">
+  <title>Spider - Aoxin Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"aosiweixin.github.io","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Aoxin`s Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Spider">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-01-29 11:22" pubdate>
+        2020年1月29日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      33
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Spider</h1>
+            
+            <div class="markdown-body">
+              <h1 id="Spider"><a href="#Spider" class="headerlink" title="Spider"></a>Spider</h1><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="安装库"><a href="#安装库" class="headerlink" title="安装库"></a>安装库</h2><p>终端打开scripts根目录，’.\pip install ***’安装库</p>
+<p>常用库: bs4 re urllib xlwt sqlite3</p>
+<h2 id="引用库"><a href="#引用库" class="headerlink" title="引用库"></a>引用库</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># -*-codeing:utf-8 -*-</span><br><br><span class="hljs-keyword">import</span> bs4  <span class="hljs-comment">#网页解析、获取数据</span><br><span class="hljs-keyword">import</span> re  <span class="hljs-comment">#正则表达式</span><br><span class="hljs-keyword">import</span> urllib.request, urllib.error  <span class="hljs-comment">#指定url、获取网页数据</span><br><span class="hljs-keyword">import</span> xlwt  <span class="hljs-comment">#进行excel操作</span><br><span class="hljs-keyword">import</span> sqlite3  <span class="hljs-comment">#进行sqlit数据库操作</span><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">aom</span>():</span><br>    print(<span class="hljs-string">&quot;*&quot;</span> * <span class="hljs-number">10</span>)<br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:<br>    aom()<br></code></pre></td></tr></table></figure>
+<h2 id="构建流程"><a href="#构建流程" class="headerlink" title="构建流程"></a>构建流程</h2><p>baseurl=”<a target="_blank" rel="noopener" href="https://movie.douban.com/top250?start=0&filter=">https://movie.douban.com/top250?start=0&amp;filter=</a>“</p>
+<p><a target="_blank" rel="noopener" href="https://movie.douban.com/top250?start=0&filter=">豆瓣电影 Top 250</a></p>
+<p>savepath=”E:/py/douban.xls”</p>
+<ol>
+<li><p>爬取网页</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">datalist=GetData(baseurl)<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">GetData</span>(<span class="hljs-params">baseurl</span>):</span><br>	<span class="hljs-built_in">list</span>=[]<br><span class="hljs-comment">#逐一解析</span><br>	<span class="hljs-keyword">return</span> <span class="hljs-built_in">list</span><br></code></pre></td></tr></table></figure></li>
+<li><p>解析数据</p>
+</li>
+<li><p>保存数据</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">SaveData</span>(<span class="hljs-params">savepath</span>)</span><br></code></pre></td></tr></table></figure>
+<h1 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h1></li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">AskUrl</span>(<span class="hljs-params">url</span>):</span><br>    <span class="hljs-comment">#head用于伪装、向服务端发消息</span><br>    head = &#123;<br>        <span class="hljs-string">&quot;User-Agent&quot;</span>:<br>        <span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 Edg/87.0.664.66&quot;</span><br>    &#125;<br>    request = urllib.request.Request(url, headers=head)<br>    html = <span class="hljs-string">&quot;&quot;</span><br>    <span class="hljs-keyword">try</span>:<br>        response = urllib.request.urlopen(request)<br>        html = response.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>)<br>        print(html)<br>    <span class="hljs-keyword">except</span> urllib.error.URLError <span class="hljs-keyword">as</span> e:<br>        <span class="hljs-keyword">if</span> <span class="hljs-built_in">hasattr</span>(e, <span class="hljs-string">&quot;code&quot;</span>):<br>            print(e.code)<br>        <span class="hljs-keyword">if</span> <span class="hljs-built_in">hasattr</span>(e, <span class="hljs-string">&quot;reason&quot;</span>):<br>            print(e.reason)<br>    <span class="hljs-keyword">return</span> html<br></code></pre></td></tr></table></figure>
+<h1 id="解析数据"><a href="#解析数据" class="headerlink" title="解析数据"></a>解析数据</h1><h2 id="补充bs4"><a href="#补充bs4" class="headerlink" title="补充bs4"></a>补充bs4</h2><p>bs4将Html文档转换成一个复杂的树形结构，每个节点都是python对象，所有对象可以归纳为4种</p>
+<ol>
+<li><p>-Tag</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read()<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><span class="hljs-comment">#会把第一个标签打印出来</span><br><br>print(bs.title)<br>print(bs.a)<br>print(bs.link)<br>print(<span class="hljs-built_in">type</span>(bs.link))<br></code></pre></td></tr></table></figure>
+<p> 会拿到第一个标签</p>
+</li>
+<li><p>-NavigableString</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read()<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br>print(bs.title.string)<br>print(<span class="hljs-built_in">type</span>(bs.title.string))<br></code></pre></td></tr></table></figure>
+<p> 上面的会打印注释</p>
+<p> 下面会打印出字典</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read()<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br>print(bs.a.attrs)<br>print(<span class="hljs-built_in">type</span>(bs.a.attrs))<br></code></pre></td></tr></table></figure></li>
+<li><p>-BeautifulSoup</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read()<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br>print(bs)<br></code></pre></td></tr></table></figure></li>
+<li><p>-comment</p>
+<p> 第一种打印出注释就是comment</p>
+</li>
+</ol>
+<h2 id="节点的获取"><a href="#节点的获取" class="headerlink" title="节点的获取"></a>节点的获取</h2><h3 id="文档的遍历"><a href="#文档的遍历" class="headerlink" title="文档的遍历"></a>文档的遍历</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read()<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br>print(bs.head.contents[<span class="hljs-number">0</span>])<br></code></pre></td></tr></table></figure>
+<p>contents是个列表，可以通过下标访问元素</p>
+<h3 id="文档的搜索"><a href="#文档的搜索" class="headerlink" title="文档的搜索"></a>文档的搜索</h3><ol>
+<li><p>find_all—字符串过滤、会查找与字符串完全一致的标签</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>)<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br>t_list = bs.find_all(<span class="hljs-string">&quot;a&quot;</span>)<br>print(t_list)<br></code></pre></td></tr></table></figure>
+<ol>
+<li><p>正则表达式搜索、使用search()方法搜索、把包含a的都拿出来</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><span class="hljs-keyword">import</span> re<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>)<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br>t_list = bs.find_all(re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">&quot;a&quot;</span>))<br>print(t_list)<br></code></pre></td></tr></table></figure></li>
+<li><p>方法：传入一个函数，根据函数的要求来搜索</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><span class="hljs-keyword">import</span> re<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>)<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_name_exist</span>(<span class="hljs-params">tag</span>):</span><br>    <span class="hljs-keyword">return</span> tag.<span class="hljs-built_in">hasattr</span>(<span class="hljs-string">&quot;name&quot;</span>)<br><br>t_list = bs.find_all(is_name_exist)<br><br>print(t_list)<br></code></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p>kwargs_____参数</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><span class="hljs-keyword">import</span> re<br><br>f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;E:\\baidu.html&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>)<br>html = f.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>)<br>bs = BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br><br>t_list = bs.find_all(<span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;head&quot;</span>)<br></code></pre></td></tr></table></figure>
+<h2 id="补充正则表达式"><a href="#补充正则表达式" class="headerlink" title="补充正则表达式"></a>补充正则表达式</h2></li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12E411A7ZQ?p=22"></a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/dreamingbaobei/p/9717234.html">史上最全常用正则表达式大全</a></p>
+<p><a href="Spider%2074d04c2785984ec0a50e036a4a41e102/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E7%AC%A6%206ef815be95ee46bc90e8b2a4e93d312b.csv">常用操作符</a></p>
+<p><a href="Spider%2074d04c2785984ec0a50e036a4a41e102/Re%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8%20bc8815fda34b42e083b77b30d2b77a90.csv">Re库的使用</a></p>
+<p><a href="Spider%2074d04c2785984ec0a50e036a4a41e102/Re%E5%BA%93%E7%9A%84%E4%BF%AE%E9%A5%B0%E7%AC%A6%20fe84e1a330d64ec7b0aa3f61523264c1.csv">Re库的修饰符</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> re<br>pat = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">&quot;AA&quot;</span>)  <span class="hljs-comment">#此处AA是正则表达式</span><br>m = pat.search(<span class="hljs-string">&quot;ABCFFFAA&quot;</span>)  <span class="hljs-comment">#被匹配的</span><br>print(m) <span class="hljs-comment">#左闭右开</span><br></code></pre></td></tr></table></figure>
+<p>上面的search只会找到第一个匹配的串，下面是第二种写法，前面是正则表达式</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> re<br>print(re.search(<span class="hljs-string">&quot;aa&quot;</span>, <span class="hljs-string">&quot;fsaa&quot;</span>))<br></code></pre></td></tr></table></figure>
+<p>下面是findall</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> re<br>print(re.findall(<span class="hljs-string">&quot;aa&quot;</span>, <span class="hljs-string">&quot;faasaa&quot;</span>))<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> re<br>print(re.findall(<span class="hljs-string">&quot;[A-Z]&quot;</span>, <span class="hljs-string">&quot;faCasBaaAA&quot;</span>))<br></code></pre></td></tr></table></figure>
+<p>sub的使用，在第三个字符串中，用第二个字符替换掉第一个字符</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> re<br>print(re.sub(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;A&quot;</span>, <span class="hljs-string">&quot;asdfagfsg&quot;</span>))<br></code></pre></td></tr></table></figure>
+<p>建议在正则表达式前面加上r，不用担心转义字符的问题</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> re<br>print(re.sub(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">r&quot;/A/&quot;</span>, <span class="hljs-string">&quot;asdfagfsg&quot;</span>))  <br></code></pre></td></tr></table></figure>
+<h2 id="正则提取"><a href="#正则提取" class="headerlink" title="正则提取"></a>正则提取</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12E411A7ZQ?t=7&p=23"></a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python">findlink = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;a href=&quot;(.*?)&quot;&gt;&#x27;</span>)  <span class="hljs-comment">#创建正则表达式对象、表示规则字符串的模式</span><br>findImgsrc = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;img.*src=&quot;(.*?)&quot;&#x27;</span>, re.S)<br>findMovieName = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;span class=&quot;title&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)<br>findScore = re.<span class="hljs-built_in">compile</span>(<br>    <span class="hljs-string">r&#x27;&lt;span class=&quot;rating_num&quot; property=&quot;v:average&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)<br>findIformation = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;span class=&quot;inq&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)<br>findDitail = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;p class=&quot;&quot;&gt;(.*)&lt;/p&gt;&#x27;</span>, re.S)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">GetData</span>(<span class="hljs-params">baseurl</span>):</span><br>    datalist = []<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>):<br>        url = baseurl + <span class="hljs-built_in">str</span>(i)<br>        html = AskUrl(url)  <span class="hljs-comment">#保存</span><br>        <span class="hljs-comment">#解析</span><br>        soup = bs4.BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br>        <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> soup.find_all(<span class="hljs-string">&#x27;div&#x27;</span>, class_=<span class="hljs-string">&quot;item&quot;</span>):<br>            <span class="hljs-comment">#print(item)  #下面是保存</span><br>            <span class="hljs-comment">#break</span><br>            data = []<br>            item = <span class="hljs-built_in">str</span>(item)<br>            link = re.findall(findlink, item)[<span class="hljs-number">0</span>]  <span class="hljs-comment">#通过正则表达式查找字符串,0表示两个里面的第一个</span><br>            <span class="hljs-comment">#print(link)</span><br>            img = re.findall(findImgsrc, item)[<span class="hljs-number">0</span>]<br>            <span class="hljs-comment">#print(img)</span><br>            name = re.findall(findMovieName, item)[<span class="hljs-number">0</span>]<br>            <span class="hljs-comment">#print(name)</span><br>            score = re.findall(findScore, item)[<span class="hljs-number">0</span>]<br>            print(score)<br>            <span class="hljs-keyword">break</span><br>    <span class="hljs-keyword">return</span> datalist<br></code></pre></td></tr></table></figure>
+<h2 id="标签解析"><a href="#标签解析" class="headerlink" title="标签解析"></a>标签解析</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">GetData</span>(<span class="hljs-params">baseurl</span>):</span><br>    datalist = []<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>):<br>        url = baseurl + <span class="hljs-built_in">str</span>(i)<br>        html = AskUrl(url)  <span class="hljs-comment">#保存</span><br>        <span class="hljs-comment">#解析</span><br>        soup = bs4.BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br>        <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> soup.find_all(<span class="hljs-string">&#x27;div&#x27;</span>, class_=<span class="hljs-string">&quot;item&quot;</span>):<br>            <span class="hljs-comment">#print(item)  #下面是保存</span><br>            <span class="hljs-comment">#break</span><br>            data = []<br>            item = <span class="hljs-built_in">str</span>(item)<br>            link = re.findall(findlink, item)[<span class="hljs-number">0</span>]  <span class="hljs-comment">#通过正则表达式查找字符串,0表示两个里面的第一个</span><br>            data.append(link)<br>            <span class="hljs-comment">#print(link)</span><br>            img = re.findall(findImgsrc, item)[<span class="hljs-number">0</span>]<br>            data.append(img)<br>            <span class="hljs-comment">#print(img)</span><br>            name = re.findall(findMovieName, item)<br>            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">len</span>(name) == <span class="hljs-number">2</span>):<br>                ctitle = name[<span class="hljs-number">0</span>]<br>                data.append(ctitle)<br>                otitle = name[<span class="hljs-number">1</span>].replace(<span class="hljs-string">&quot;\xa0/\xa0&quot;</span>, <span class="hljs-string">&quot;&quot;</span>)<br>                <span class="hljs-comment">#print(otitle)</span><br>                data.append(otitle)<br>            <span class="hljs-keyword">else</span>:<br>                data.append(name[<span class="hljs-number">0</span>])<br>                data.append(<span class="hljs-string">&quot; &quot;</span>)<br>            <span class="hljs-comment">#print(name)</span><br>            score = re.findall(findScore, item)[<span class="hljs-number">0</span>]<br>            data.append(score)<br>            <span class="hljs-comment">#print(score)</span><br>            information = re.findall(findIformation, item)[<span class="hljs-number">0</span>]<br>            data.append(information.replace(<span class="hljs-string">&quot;。&quot;</span>, <span class="hljs-string">&quot;&quot;</span>))<br><br>            datalist.append(data)<br>            print(datalist)<br>    <span class="hljs-keyword">return</span> datalist<br></code></pre></td></tr></table></figure>
+<h1 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h1><h2 id="保存到excel中"><a href="#保存到excel中" class="headerlink" title="保存到excel中"></a>保存到excel中</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> xlwt<br>wookbook = xlwt.Workbook()<br>wooksheet = wookbook.add_sheet(<span class="hljs-string">&quot;sheet1&quot;</span>)<br>wooksheet.write(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-string">&quot;Hello&quot;</span>)<br>wookbook.save(<span class="hljs-string">&quot;text.xls&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p>下面是九九乘法表，示例python的xlwt的使用</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> xlwt<br>wookbook = xlwt.Workbook()<br>wooksheet = wookbook.add_sheet(<span class="hljs-string">&quot;sheet1&quot;</span>)<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">9</span>):<br>    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, i + <span class="hljs-number">1</span>):<br>        wooksheet.write(i, j, <span class="hljs-string">&quot;%d*%d=%d&quot;</span> % (i + <span class="hljs-number">1</span>, j + <span class="hljs-number">1</span>, (j + <span class="hljs-number">1</span>) * (i + <span class="hljs-number">1</span>)))<br>wookbook.save(<span class="hljs-string">&quot;1.xls&quot;</span>)<br></code></pre></td></tr></table></figure>
+<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># -*-codeing:utf-8 -*-</span><br><br><span class="hljs-keyword">import</span> bs4  <span class="hljs-comment">#网页解析、获取数据</span><br><span class="hljs-keyword">import</span> re  <span class="hljs-comment">#正则表达式</span><br><span class="hljs-keyword">import</span> urllib.request, urllib.error  <span class="hljs-comment">#指定url、获取网页数据</span><br><span class="hljs-keyword">import</span> xlwt  <span class="hljs-comment">#进行excel操作</span><br><span class="hljs-keyword">import</span> sqlite3  <span class="hljs-comment">#进行sqlit数据库操作</span><br><br>baseurl = <span class="hljs-string">&quot;https://movie.douban.com/top250?start=&quot;</span><br><br>datalist = []<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span>():</span><br>    GetData(baseurl)<br>    SaveData(datalist)<br><br>findlink = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;a href=&quot;(.*?)&quot;&gt;&#x27;</span>)  <span class="hljs-comment">#创建正则表达式对象、表示规则字符串的模式</span><br>findImgsrc = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;img.*src=&quot;(.*?)&quot;&#x27;</span>, re.S)<br>findMovieName = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;span class=&quot;title&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)<br>findScore = re.<span class="hljs-built_in">compile</span>(<br>    <span class="hljs-string">r&#x27;&lt;span class=&quot;rating_num&quot; property=&quot;v:average&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)<br>findIformation = re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">r&#x27;&lt;span class=&quot;inq&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">GetData</span>(<span class="hljs-params">baseurl</span>):</span><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>):<br>        url = baseurl + <span class="hljs-built_in">str</span>(i)<br>        html = AskUrl(url)  <span class="hljs-comment">#保存</span><br>        <span class="hljs-comment">#解析</span><br>        soup = bs4.BeautifulSoup(html, <span class="hljs-string">&quot;html.parser&quot;</span>)<br>        <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> soup.find_all(<span class="hljs-string">&#x27;div&#x27;</span>, class_=<span class="hljs-string">&quot;item&quot;</span>):<br>            <span class="hljs-comment">#print(item)  #下面是保存</span><br>            <span class="hljs-comment">#break</span><br>            data = []<br>            item = <span class="hljs-built_in">str</span>(item)<br>            link = re.findall(findlink, item)[<span class="hljs-number">0</span>]  <span class="hljs-comment">#通过正则表达式查找字符串,0表示两个里面的第一个</span><br>            data.append(link)<br>            <span class="hljs-comment">#print(link)</span><br>            img = re.findall(findImgsrc, item)[<span class="hljs-number">0</span>]<br>            data.append(img)<br>            <span class="hljs-comment">#print(img)</span><br>            name = re.findall(findMovieName, item)<br>            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">len</span>(name) == <span class="hljs-number">2</span>):<br>                ctitle = name[<span class="hljs-number">0</span>]<br>                data.append(ctitle)<br>                otitle = name[<span class="hljs-number">1</span>].replace(<span class="hljs-string">&quot;\xa0/\xa0&quot;</span>, <span class="hljs-string">&quot;&quot;</span>)<br>                <span class="hljs-comment">#print(otitle)</span><br>                data.append(otitle)<br>            <span class="hljs-keyword">else</span>:<br>                data.append(name[<span class="hljs-number">0</span>])<br>                data.append(<span class="hljs-string">&quot; &quot;</span>)<br>            <span class="hljs-comment">#print(name)</span><br>            score = re.findall(findScore, item)[<span class="hljs-number">0</span>]<br>            data.append(score)<br>            <span class="hljs-comment">#print(score)</span><br>            information = re.findall(findIformation, item)[<span class="hljs-number">0</span>]<br>            data.append(information.replace(<span class="hljs-string">&quot;。&quot;</span>, <span class="hljs-string">&quot;&quot;</span>))<br><br>            datalist.append(data)<br>            <span class="hljs-comment">#print(datalist)</span><br>    <span class="hljs-keyword">return</span> datalist<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">AskUrl</span>(<span class="hljs-params">url</span>):</span><br>    <span class="hljs-comment">#head用于伪装、向服务端发消息</span><br>    head = &#123;<br>        <span class="hljs-string">&quot;User-Agent&quot;</span>:<br>        <span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 Edg/87.0.664.66&quot;</span><br>    &#125;<br>    request = urllib.request.Request(url, headers=head)<br>    html = <span class="hljs-string">&quot;&quot;</span><br>    <span class="hljs-keyword">try</span>:<br>        response = urllib.request.urlopen(request)<br>        html = response.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>)<br>        <span class="hljs-comment">#print(html)</span><br>    <span class="hljs-keyword">except</span> urllib.error.URLError <span class="hljs-keyword">as</span> e:<br>        <span class="hljs-keyword">if</span> <span class="hljs-built_in">hasattr</span>(e, <span class="hljs-string">&quot;code&quot;</span>):<br>            print(e.code)<br>        <span class="hljs-keyword">if</span> <span class="hljs-built_in">hasattr</span>(e, <span class="hljs-string">&quot;reason&quot;</span>):<br>            print(e.reason)<br>    <span class="hljs-keyword">return</span> html<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">SaveData</span>(<span class="hljs-params">datalist</span>):</span><br>    wookbook = xlwt.Workbook(encoding=<span class="hljs-string">&quot;utf-8&quot;</span>)  <span class="hljs-comment">#创建</span><br>    wooksheet = wookbook.add_sheet(<span class="hljs-string">&quot;sheet1&quot;</span>)<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">250</span>):<br>        print(<span class="hljs-string">&quot;第%d条&quot;</span> % (i + <span class="hljs-number">1</span>))<br>        data = datalist[i]<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">6</span>):<br>            wooksheet.write(i, j, data[j])<br>    wookbook.save(<span class="hljs-string">&quot;douban.xls&quot;</span>)<br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:<br>    main()<br></code></pre></td></tr></table></figure>
+<h1 id="SQlite部分"><a href="#SQlite部分" class="headerlink" title="SQlite部分"></a>SQlite部分</h1><p>结构如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">**<span class="hljs-keyword">import</span> sqlite3<br>conn = sqlite3.connect(<span class="hljs-string">&quot;test.db&quot;</span>)<br>print(<span class="hljs-string">&quot;Successfully open&quot;</span>)<br>c = conn.cursor()<br>sql = <span class="hljs-string">&quot;&quot;</span><br>c.execute(sql)<br>conn.commit()<br>conn.close()<br>print(<span class="hljs-string">&quot;Successfully create&quot;</span>)**<br></code></pre></td></tr></table></figure>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/python/">python</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/01/29/hello-world/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">hello world</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
