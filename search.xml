@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Spider_BQG</title>
+      <link href="2021/01/11/Spider-BQG/"/>
+      <url>2021/01/11/Spider-BQG/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> requests<br><span class="hljs-keyword">from</span> tqdm <span class="hljs-keyword">import</span> tqdm<br><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_content</span>(<span class="hljs-params">target</span>):</span><br>    req = requests.get(url=target)<br>    req.encoding = <span class="hljs-string">&#x27;utf-8&#x27;</span><br>    html = req.text<br>    bf = BeautifulSoup(html, <span class="hljs-string">&#x27;lxml&#x27;</span>)<br>    texts = bf.find(<span class="hljs-string">&#x27;div&#x27;</span>, <span class="hljs-built_in">id</span>=<span class="hljs-string">&#x27;content&#x27;</span>)<br>    content = texts.text.strip().split(<span class="hljs-string">&#x27;\xa0&#x27;</span> * <span class="hljs-number">4</span>)<br>    <span class="hljs-keyword">return</span> content<br><br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">spider</span>(<span class="hljs-params"><span class="hljs-built_in">object</span></span>):</span><br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, book_name, target</span>):</span><br>        self.__book_name = book_name<br>        self.__target = target<br>        self.__server = <span class="hljs-string">&#x27;https://www.xsbiquge.com&#x27;</span><br><br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">do_project</span>(<span class="hljs-params">self</span>):</span><br>        req = requests.get(url=self.__target)<br>        req.encoding = <span class="hljs-string">&#x27;utf-8&#x27;</span><br>        html = req.text<br>        chapter_bs = BeautifulSoup(html, <span class="hljs-string">&#x27;lxml&#x27;</span>)<br>        chapters = chapter_bs.find(<span class="hljs-string">&#x27;div&#x27;</span>, <span class="hljs-built_in">id</span>=<span class="hljs-string">&#x27;list&#x27;</span>)<br>        chapters = chapters.find_all(<span class="hljs-string">&#x27;a&#x27;</span>)<br>        <span class="hljs-keyword">for</span> chapter <span class="hljs-keyword">in</span> tqdm(chapters):<br>            chapter_name = chapter.string<br>            url = self.__server + chapter.get(<span class="hljs-string">&#x27;href&#x27;</span>)<br>            content = get_content(url)<br>            <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(self.__book_name, <span class="hljs-string">&#x27;a&#x27;</span>, encoding=<span class="hljs-string">&#x27;utf-8&#x27;</span>) <span class="hljs-keyword">as</span> f:<br>                f.write(chapter_name)<br>                f.write(<span class="hljs-string">&#x27;\n&#x27;</span>)<br>                f.write(<span class="hljs-string">&#x27;\n&#x27;</span>.join(content))<br>                f.write(<span class="hljs-string">&#x27;\n&#x27;</span>)<br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span>():</span><br>    spider1 = spider(<span class="hljs-string">&quot;book_name.txt&quot;</span>, <span class="hljs-string">&quot;https://www.xsbiquge.com/88_88080/&quot;</span>)<br>    spider1.do_project()<br>    print(<span class="hljs-string">&quot;运行结束&quot;</span>)<br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    main()<br><br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+          <category> Spider </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> bs4 </tag>
+            
+            <tag> python </tag>
+            
+            <tag> re </tag>
+            
+            <tag> Spider </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Spider</title>
       <link href="2021/01/01/Spider/"/>
       <url>2021/01/01/Spider/</url>
