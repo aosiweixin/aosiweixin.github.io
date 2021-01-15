@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Python语法糖</title>
+      <link href="2021/01/15/Python%E8%AF%AD%E6%B3%95%E7%B3%96/"/>
+      <url>2021/01/15/Python%E8%AF%AD%E6%B3%95%E7%B3%96/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Syntactic-Suger"><a href="#Syntactic-Suger" class="headerlink" title="Syntactic Suger"></a>Syntactic Suger</h1><p>🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬🍬</p><blockquote><p>语法糖：写代码时的有趣易用的写法</p></blockquote><ol><li><p>大数的分隔符</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-number">1_000_000</span><br></code></pre></td></tr></table></figure></li><li><p>交换变量值</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-number">100</span><br>b = <span class="hljs-number">50</span><br>a , b = b , a<br></code></pre></td></tr></table></figure></li><li><p>if else</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> (<span class="hljs-number">100</span> &lt; a &lt; <span class="hljs-number">150</span> ):<br></code></pre></td></tr></table></figure></li><li><p>字符串快速构造</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-string">&quot;QAQ&quot;</span>*<span class="hljs-number">100</span><br></code></pre></td></tr></table></figure></li><li><p>列表相加</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]<br>b = [<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]<br>c = a + b<br></code></pre></td></tr></table></figure></li><li><p>列表切片</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]<br>c = a[<span class="hljs-number">2</span> : -<span class="hljs-number">1</span>]<br></code></pre></td></tr></table></figure></li><li><p>打包解包</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]<br>x,y,z = a<br></code></pre></td></tr></table></figure></li><li><p>with语句</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;test.txt&quot;</span>, <span class="hljs-string">&#x27;r&#x27;</span>) <span class="hljs-keyword">as</span> f:<br>data = f.read()<br><span class="hljs-comment"># with会自带close和异常处理 </span><br></code></pre></td></tr></table></figure></li><li><p>列表推导式</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]<br>b = [e+<span class="hljs-number">233</span> <span class="hljs-keyword">for</span> e <span class="hljs-keyword">in</span> a]<br></code></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Syntactic Suger </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pygame贪吃蛇</title>
       <link href="2021/01/13/pygame%E8%B4%AA%E5%90%83%E8%9B%87/"/>
       <url>2021/01/13/pygame%E8%B4%AA%E5%90%83%E8%9B%87/</url>
