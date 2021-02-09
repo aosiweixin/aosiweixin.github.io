@@ -76,13 +76,13 @@
       
         <tags>
             
-            <tag> bs4 </tag>
-            
             <tag> python </tag>
             
-            <tag> re </tag>
-            
             <tag> Spider </tag>
+            
+            <tag> bs4 </tag>
+            
+            <tag> re </tag>
             
         </tags>
       
@@ -109,13 +109,13 @@
       
         <tags>
             
-            <tag> bs4 </tag>
-            
-            <tag> urllib </tag>
-            
             <tag> python </tag>
             
+            <tag> bs4 </tag>
+            
             <tag> re </tag>
+            
+            <tag> urllib </tag>
             
             <tag> xlwt </tag>
             
